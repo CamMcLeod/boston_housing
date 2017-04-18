@@ -14589,7 +14589,7 @@ EuZkzczMzKyE/T+eW13zSu8nUAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> When trained with a maximum depths of 1, the model suffers from high variance. High variance occurs when the model lacks complexity. When the model is trained with a maximum depth of 10, the model suffers from high bias. The low accuracy for training and testing score at a maximum depth of 1 is a cue that the model has high variance. The diverging high training score and lowering validation score is a cue at a maximum depth of 10 that the model is suffering from high bias.</p>
+<p><strong>Answer: </strong> When trained with a maximum depths of 1, the model suffers from high bias. High bias occurs when the model lacks complexity. When the model is trained with a maximum depth of 10, the model suffers from high variance. The low accuracy for training and testing score at a maximum depth of 1 is a cue that the model has high bias. The diverging high training score and lowering validation score is a cue at a maximum depth of 10 that the model is suffering from high variance.</p>
 
 </div>
 </div>
@@ -14661,7 +14661,7 @@ EuZkzczMzKyE/T+eW13zSu8nUAAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> K-fold cross-validation splits the data into k number of subgroups, which are then trained individually and tested on the remaining of the data. This technique allows the algorithm to be trained and tested on different batches of data, allowing the model to generalize better to new data. If grid search was used without cross-validation, the model would be highly optimized to a specific set of data, possibly further increasing bias which would hurt the model.</p>
+<p><strong>Answer: </strong> K-fold cross-validation splits the data into k number of subgroups, which are then trained individually and tested on the remaining k-1 groups of the data. This process is repeated k times (once for each of the "folds"), the results are then averaged to give us the final estimation. This technique allows the algorithm to be trained and tested on different batches of data, allowing the model to generalize better to new data. If grid search was used without cross-validation, the model would be highly optimized to a specific set of data, possibly further increasing bias which would hurt the model.</p>
 
 </div>
 </div>
